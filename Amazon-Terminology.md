@@ -26,3 +26,6 @@ Instructs CloudFront where to get the information that it is caching in the edge
 
 ### 11. Edge Locations
 A site where data can be stored for lower latency. Often, edge locations will be close to high-population areas that will generate high traffic volumes.
+
+### 12. Origin
+A complex type that describes the Amazon S3 bucket, Hypertext Transfer Protocol (HTTP) server (for example, a web server), or other server from which CloudFront gets your files.
