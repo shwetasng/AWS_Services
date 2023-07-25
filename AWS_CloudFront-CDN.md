@@ -46,7 +46,8 @@
 8. Under **Object Ownership** choose **Edit**. Choose **ACLs enabled**. Check the acknowledgement and choose **Save changes**. <img width="663" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/e315fdc4-9736-49e4-b6e7-6c901c1a275e"> <img width="617" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/517c60e6-c9b6-4ab5-a69b-74ad09502ad2">
 
 
-9. In the **Bucket policy** section, choose **Edit**. <img width="662" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/760861c3-bdcd-4dba-acd2-0810eaf38ce7">
+9. In the **Bucket policy** section, choose **Edit**.      
+<img width="662" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/760861c3-bdcd-4dba-acd2-0810eaf38ce7">
 
 10. To grant public read access for your website, copy and paste the following bucket policy into the policy editor.
     ```text
@@ -67,7 +68,8 @@
     ]
     }
     ```
-11. In the policy, replace **example-bucket** with the name of your bucket. <img width="385" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/b664bf7f-6721-49df-810a-d774dfed5992">
+11. In the policy, replace **example-bucket** with the name of your bucket. 
+<img width="385" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/b664bf7f-6721-49df-810a-d774dfed5992">
 
 12. At the bottom of the page, choose **Save changes**.
 ### Task 3. Upload an HTML document
@@ -95,7 +97,8 @@
 
 23. Choose **Edit**.
 24. Select **Enable**.
-25. In the **Index document** text box, enter `index.html`  <img width="588" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/573f95f4-29cf-4cfe-89a0-fd42acc45749">
+25. In the **Index document** text box, enter `index.html`  
+<img width="588" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/573f95f4-29cf-4cfe-89a0-fd42acc45749">
 
 26. Select **Save changes**.
 27. Scroll down to the **Static website hosting** section again, and copy the **Bucket website endpoint** URL to your clipboard. <img width="838" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/24cb10ef-f119-4cc8-a30c-700747d1c83e">
@@ -111,7 +114,9 @@
 30. Choose Create a **CloudFront Distribution**.
 31. Under **Origin**, choose the text box next to **Origin domain** and select the endpoint from your S3 bucket. <img width="454" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/a4f12e08-9211-4a96-8fa2-1bb6ecce090f">
 
-32. For **Viewer Protocol Policy**, ensure that **HTTP and HTTPS** is selected. Under **Web Application Firewall (WAF)** choose **Do not enable security protections**. <img width="613" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/3c3c94c2-da8a-40ed-89ec-a1fdf176aa7e">
+32. For **Viewer Protocol Policy**, ensure that **HTTP and HTTPS** is selected. Under **Web Application Firewall (WAF)** choose **Do not enable security protections**. 
+<img width="613" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/3c3c94c2-da8a-40ed-89ec-a1fdf176aa7e">
+
 
 33. Scroll to the bottom of the page and select **Create Distribution**.
     - A new CloudFront distribution displays in the distributions list. The Status will say Deploying until your website has been distributed. This may take up to 20 minutes.
@@ -143,6 +148,7 @@
        <p><img src="http://d2f1zrxb2zaf30.cloudfront.net/picture.jpg" alt="my test image">
        ```
      - Save the text file with an HTML extension.
+       
        <img width="590" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f8434dca-91d3-4872-9265-95fed53ccb58">
 
 36. Use an internet browser to open the HTML file that you just created.
