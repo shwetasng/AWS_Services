@@ -24,4 +24,5 @@ A system of distributed servers (network) that delivers pages and other web cont
 ### 10. Distribution
 Instructs CloudFront where to get the information that it is caching in the edge locations and how to track and manage the content delivery.
 
-
+### 11. Edge Locations
+A site where data can be stored for lower latency. Often, edge locations will be close to high-population areas that will generate high traffic volumes.
