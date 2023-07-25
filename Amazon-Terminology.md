@@ -9,3 +9,5 @@
 
 ### 5. Amazon Dynamo DB
 
+### 6. Amazon CloudFront
+A fast content delivery network (CDN) service that securely delivers data, videos, applications, and application programming interfaces (APIs) to customers globally with low latency and high transfer speeds, all within a developer-friendly environment.
