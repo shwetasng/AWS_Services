@@ -17,3 +17,7 @@ Direct Connect is a cloud service solution that provides the ability to establis
 
 ### 8. Caching
 Storing frequently requested data in edge locations so that it can be accessed more quickly.
+
+### 9. Content Delivery Network (CDN)
+A system of distributed servers (network) that delivers pages and other web content to a user, based on the geographic locations of the user, the origin of the webpage, and the content delivery server.
+
