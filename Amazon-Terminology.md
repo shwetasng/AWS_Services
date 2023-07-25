@@ -1,9 +1,10 @@
 ## Amazon Terminology
 ### 1. Amazon Elastic Compute Cloud (EC2)
-
+A web service that provides secure, resizable compute capacity in the cloud. Think of it as renting a computer in the cloud.
 ### 2. Amazon Simple Storage Servive (S3)
 
 ### 3. Amazon Elastic Block Store (EBS)
+Storage for specific Amazon Elastic Compute Cloud (Amazon EC2) instances. Think of it as the storage drive for your EC2 instance.
 
 ### 4. Amazon Relational Database Service (RDS)
 
@@ -29,3 +30,11 @@ A site where data can be stored for lower latency. Often, edge locations will be
 
 ### 12. Origin
 A complex type that describes the Amazon S3 bucket, Hypertext Transfer Protocol (HTTP) server (for example, a web server), or other server from which CloudFront gets your files.
+### 13. HDD
+Slower storage that uses a spinning disk to store data.
+
+### 14. Input/Output operations per second (IOPS)
+A common performance measurement used to benchmark computer storage devices like hard disk drives (HDDs) and solid state drives (SSDs).
+
+### 15. Solid State Drive (SSD)
+Very fast storage that uses flash memory instead of a spinning disk.
