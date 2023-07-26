@@ -2,12 +2,15 @@
 - In this practical, you will create an Amazon Elastic Compute Cloud (Amazon EC2) instance and then attach an Amazon Elastic Block Store (Amazon EBS) volume to it.
 
 ### Task 1. Start creating the instance and assign a name
-1. Choose the **Services** menu, locate the **Compute** services, and select **EC2**.<img width="713" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/c23db25c-2e0a-47fc-b30e-ebda34951e6f">
+1. Choose the **Services** menu, locate the **Compute** services, and select **EC2**.
+<img width="713" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/c23db25c-2e0a-47fc-b30e-ebda34951e6f">
 
-2. Choose the **Launch instance** button in the middle of the page, and then select **Launch instance** from the dropdown menu. <img width="765" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f235c347-ef84-49d5-b474-aa368186b571">
+2. Choose the **Launch instance** button in the middle of the page, and then select **Launch instance** from the dropdown menu. 
+<img width="765" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f235c347-ef84-49d5-b474-aa368186b571">
 
 3. Name the instance:
-   - Give it the name `Web Server` <img width="560" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/a0dc5a68-49bc-4fd6-a1a6-0cce2763bce1">
+   - Give it the name `Web Server`
+   <img width="560" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/a0dc5a68-49bc-4fd6-a1a6-0cce2763bce1">
 
    - Tags help you categorize your AWS resources in different ways; for example, by purpose, owner, or environment. This is useful when you have many resources of the same type—you can quickly identify a specific resource based on the tags you have assigned to it. Each tag consists of a key and a value, which you define.
    - **NOTE:** *Name* is simply another tag. The key for this tag is `Name`, and the value is `Web Server 1`.
@@ -25,7 +28,7 @@
 5. Specify an Instance type:
    - In the *Instance type* panel, keep the default **t2.micro** selected.
    - The *Instance Type* defines the hardware resources assigned to the instance. This instance type has 1 virtual central processing unit (CPU) and 1 GiB of memory
-     <img width="558" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/b8cdd536-17f1-45ce-a066-62446b282af8">
+   <img width="558" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/b8cdd536-17f1-45ce-a066-62446b282af8">
 
 
 ### Task 4. Choose a key pair
@@ -47,7 +50,7 @@
     - **Security group name:** Clear the text and enter `Web Server`
     - **Description:** Clear the text and enter `Security group for my web server`
     - Choose **Remove** to remove the default SSH inbound rule.
-      <img width="522" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/bd42574c-6185-4bfb-9a4a-dae99923f3f5">
+    <img width="522" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/bd42574c-6185-4bfb-9a4a-dae99923f3f5">
 
     - ***Note:*** You will configure a different inbound rule later in this lab.
     - A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you associate one or more security groups with the instance. You add rules to each security group that allow traffic to or from its associated instances. You can modify the rules for a security group at any time. The new rules are automatically applied to all instances that are associated with the security group.
@@ -82,7 +85,7 @@
 ### Task 8. Review the instance and launch
 13. At the bottom of the **Summary** panel on the right side of the screen choose **`Launch instance`**
     - You will see a Success message.
-      <img width="857" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/0ea5620b-89a7-4e70-8b5d-687779491be5">
+    <img width="857" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/0ea5620b-89a7-4e70-8b5d-687779491be5">
 
 14. Choose **`View all instances`**
     - The instance will first appear in the *Pending state*, which means it is being launched. The state will then change to *Running*, which indicates that the instance has started booting. It takes a few minutes for the instance to boot.
@@ -102,7 +105,7 @@
 
 18. Open a new tab in your web browser, paste the public IP address you just copied, and press **Enter**.
     - The webpage does not load. You must update the security group to be able to access the page.
-      <img width="960" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/8eab8405-75c4-41d6-8558-2f8aa7ccd2e5">
+    <img width="960" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/8eab8405-75c4-41d6-8558-2f8aa7ccd2e5">
 
 ### Task 10. Update the security group
 - You are not able to access your web server because the security group is not permitting inbound traffic on port 80, which is used for HTTP web requests. In this task, you update the security group.
@@ -130,20 +133,25 @@
 ### Task 13. Attach an EBS volume to your EC2 instance
 27. Return to the **EC2 Management Console** browser tab.
 28. In the left navigation pane, under **Instances**, choose **Instances**.
-29. Select the **Web Server** instance, and in the **Networking** tab below, note the **Availability Zone** in which your instance is running. <img width="196" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/7f5638dc-9ad2-41be-92b2-a65eb06b627c">
+29. Select the **Web Server** instance, and in the **Networking** tab below, note the **Availability Zone** in which your instance is running. 
+<img width="196" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/7f5638dc-9ad2-41be-92b2-a65eb06b627c">
 
-    - The EBS volume you will soon create will need to be in the same Availability Zone.
-30. In the left navigation pane, under **Elastic Block Store**, select **Volumes**. <img width="161" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/587f6ff1-c7b6-4fc9-827a-00aca9026ba7">
+- The EBS volume you will soon create will need to be in the same Availability Zone.
+30. In the left navigation pane, under **Elastic Block Store**, select **Volumes**. 
+<img width="161" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/587f6ff1-c7b6-4fc9-827a-00aca9026ba7">
 
 31. Select **Create volume**.
 32. For **Size**, enter `1` to create a volume with 1 GiB.
-33. For **Availability Zone**, select the same Availability Zone that your EC2 instance is running in. <img width="367" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f4a15898-fccb-4f7a-b5f6-12fc9870ab74">
+33. For **Availability Zone**, select the same Availability Zone that your EC2 instance is running in. 
+<img width="367" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f4a15898-fccb-4f7a-b5f6-12fc9870ab74">
 
 34. Scroll down and select **Create volume**.
     - The new volume appears in the volumes list with a state of *available*.
-35. Select the new 1 GiB size volume. Then, choose **Actions**, and **Attach volume**. <img width="737" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/2f079493-74d3-489f-a983-b3d12b7187cc">
+35. Select the new 1 GiB size volume. Then, choose **Actions**, and **Attach volume**. 
+<img width="737" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/2f079493-74d3-489f-a983-b3d12b7187cc">
 
-36. Select the **Instance** drop-down menu, and then select your EC2 instance. The list of instances will automatically populate. <img width="481" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/8bbbbaf4-3daf-405e-91c4-4654e46402fa">
+36. Select the **Instance** drop-down menu, and then select your EC2 instance. The list of instances will automatically populate. 
+<img width="481" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/8bbbbaf4-3daf-405e-91c4-4654e46402fa">
 
 37. Select **Attach volume**.
     - The state of the volume changes to *in-use*. The new volume is now attached to your EC2 instance.
