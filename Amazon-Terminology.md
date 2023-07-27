@@ -55,7 +55,7 @@ A security group acts as a virtual firewall for your instance to control inbound
 An object in AWS that, when associated with an identity or a resource, defines its permissions. AWS evaluates these policies when a principal entity (user or role) makes a request.
 
 ### 21. Amazon Inspector
-Helps customers identify security vulnerabilities and deviations from security best practices in applications, before they are deployed and while they are running in a production environment.
+Helps customers identify security vulnerabilities and deviations from security best practices in applications, before they are deployed and while they are running in a production environment;; An automated security assessment service. It helps you test the network accessibility of your Amazon Elastic Compute Cloud (Amazon EC2) instances and the security state of your applications running on the instances.
 
 ### 22. Group
 An IAM group is a collection of IAM users. Groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users.
@@ -69,8 +69,20 @@ AWS security credentials verify who you are and whether you have permission to a
 ### 25. Enable multi-factor authentication (MFA)
 This approach to authentication requires two or more independent pieces of information to be authenticated.
 
+### 26. AWS Shield
+A managed DDoS protection service that safeguards applications running on Amazon Web Services (AWS).
+
+### 27. AWS WAF
+A service that gives you control over which traffic to allow or block to your web applications by defining customizable web security rules.
+
 ### 26. JavaScript Object Notation (JSON)
 A syntax for storing and exchanging data.
 
 ### 27. Multifactor Authentication (MFA)
 A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
+
+### 28. Distributed denial of service (DDoS)
+A malicious attempt to make a targeted system, such as a website or application, unavailable to end users. To achieve this, attackers use a variety of techniques that consume network or other resources, interrupting access for legitimate end users.
+
+### 29. AWS artifact
+A central resource for compliance-related information. It provides on-demand access to AWS security and compliance reports and select online agreements.
