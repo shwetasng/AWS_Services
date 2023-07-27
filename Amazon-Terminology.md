@@ -84,5 +84,18 @@ A security system that requires more than one method of authentication from inde
 ### 28. Distributed denial of service (DDoS)
 A malicious attempt to make a targeted system, such as a website or application, unavailable to end users. To achieve this, attackers use a variety of techniques that consume network or other resources, interrupting access for legitimate end users.
 
+### 29. Amazon CloudWatch
+A monitoring service to monitor your AWS resources and the applications that you run on AWS
+
+### 30. Amazon CloudTrail
+A service to monitor and log every action that is performed on your AWS account for security purposes
+
+### 31. AWS Config
+A service that lets you assess, audit, and evaluate the configurations of your AWS resources
+
+### 32. Amazon Simple Notification Service (Amazon SNS)
+An AWS tool that lets you send texts, emails, and messages to other cloud services and send notifications in various forms from the cloud to the client
+
+
 ### 29. AWS artifact
 A central resource for compliance-related information. It provides on-demand access to AWS security and compliance reports and select online agreements.
