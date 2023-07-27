@@ -38,3 +38,39 @@ A common performance measurement used to benchmark computer storage devices like
 
 ### 15. Solid State Drive (SSD)
 Very fast storage that uses flash memory instead of a spinning disk.
+
+### 16. AWS Identity and Access Management (IAM)
+Involves the application of controls to users who need access to computing resources.
+
+### 17. Role
+An IAM identity that you can create in your account that has specific permissions.
+
+### 18. User
+An entity that you create in Amazon Web Services (AWS) to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials.
+
+### 19. Security Group
+A security group acts as a virtual firewall for your instance to control inbound and outbound traffic.
+
+### 20. Policy
+An object in AWS that, when associated with an identity or a resource, defines its permissions. AWS evaluates these policies when a principal entity (user or role) makes a request.
+
+### 21. Amazon Inspector
+Helps customers identify security vulnerabilities and deviations from security best practices in applications, before they are deployed and while they are running in a production environment.
+
+### 22. Group
+An IAM group is a collection of IAM users. Groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users.
+
+### 23. Root User
+When you first create an AWS account, you begin with a single sign-in identity that has complete access to all AWS services and resources in the account.
+
+### 24. Credential
+AWS security credentials verify who you are and whether you have permission to access the resources that you are requesting.
+
+### 25. Enable multi-factor authentication (MFA)
+This approach to authentication requires two or more independent pieces of information to be authenticated.
+
+### 26. JavaScript Object Notation (JSON)
+A syntax for storing and exchanging data.
+
+### 27. Multifactor Authentication (MFA)
+A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
