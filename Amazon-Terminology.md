@@ -99,3 +99,30 @@ An AWS tool that lets you send texts, emails, and messages to other cloud servic
 
 ### 29. AWS artifact
 A central resource for compliance-related information. It provides on-demand access to AWS security and compliance reports and select online agreements.
+
+### 30. Relational database
+A collection of datasets organized as records and columns in tables. In a relational database system, relationships are defined between the database tables. Think of a relational database as a set of data with 1-to-1 and 1-to-many relationships. For example, a database of customers would match each customer with an identifier that uniquely identifies the customer. Developers use structured query language (SQL) to interact with the database.
+
+### 31. Amazon Relational Database Service (Amazon RDS)
+Amazon RDS lets developers create and manage relational databases in the cloud. Amazon RDS lets developers track large amounts of data and organize and search through it efficiently.
+
+### 32. Amazon DynamoDB
+The AWS nonrelational database service. Data is stored in key-value pairs.
+
+### 33. Nonrelational database
+Also called a "NoSQL" or "Not only SQL" database. Each entry is stored in a key-value pair in which each key is attached to values. Each entry can have a different number of values attached to a key.
+
+### 34. Amazon Redshift
+The AWS data-warehousing service that can store massive amounts of data in a way that makes it fast to query for business intelligence (BI) purposes.
+
+### 35. Online transaction processing (OLTP)
+A category of data processing that is focused on transaction-oriented tasks. OLTP typically involves inserting, updating, or deleting small amounts of data in a database.
+
+### 36. Online analytic processing (OLAP)
+A computing method that lets users efficiently and selectively extract and query data to analyze it from different points of view.
+
+### 37. Amazon Aurora
+A relational database engine compatible with MySQL and PostgreSQL, built for the cloud, combining the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open-source databases.
+
+### 38. MySQL
+An open-source relational database management system.
