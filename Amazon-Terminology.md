@@ -149,3 +149,24 @@ This service gives developers and businesses an easy way to create a collection 
 
 ### 52. Stack
 A collection of AWS resources that you can manage as a single unit. You can create, update, or delete a collection of resources by creating, updating, or deleting stacks.
+
+### 53. Machine learning (ML)
+A subset of artificial intelligence (AI) in which a computer algorithm can modify its own behavior
+
+### 54. Artificial intelligence (AI)
+A computer system able to perform tasks that normally require human intelligence, such as visual perception, speech recognition, decision-making, and translation between languages
+
+### 55. Amazon SageMaker
+Provides every developer and data scientist with the ability to build, train, and deploy ML models quickly
+
+### 56. Deep learning
+An AI learning process; the process of the AI scanning the artificial neural network
+
+### 57. AWS DeepRacer
+A fully autonomous, 1/18th-scale race car driven by reinforcement learning, a 3D racing simulator, and a global racing league
+
+### 58. AWS DeepLens
+A fully programmable video camera, with tutorials, code, and pretrained models designed to expand ML skills
+
+### 59. Neural network
+A model or algorithm that is designed to make decisions in a way similar to a human brain
