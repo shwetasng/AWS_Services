@@ -75,68 +75,77 @@ A managed DDoS protection service that safeguards applications running on Amazon
 ### 27. AWS WAF
 A service that gives you control over which traffic to allow or block to your web applications by defining customizable web security rules.
 
-### 26. JavaScript Object Notation (JSON)
+### 28. JavaScript Object Notation (JSON)
 A syntax for storing and exchanging data.
 
-### 27. Multifactor Authentication (MFA)
+### 29. Multifactor Authentication (MFA)
 A security system that requires more than one method of authentication from independent categories of credentials to verify the user's identity for a login or other transaction.
 
-### 28. Distributed denial of service (DDoS)
+### 30. Distributed denial of service (DDoS)
 A malicious attempt to make a targeted system, such as a website or application, unavailable to end users. To achieve this, attackers use a variety of techniques that consume network or other resources, interrupting access for legitimate end users.
 
-### 29. Amazon CloudWatch
+### 31. Amazon CloudWatch
 A monitoring service to monitor your AWS resources and the applications that you run on AWS
 
-### 30. Amazon CloudTrail
+### 32. Amazon CloudTrail
 A service to monitor and log every action that is performed on your AWS account for security purposes
 
-### 31. AWS Config
+### 33. AWS Config
 A service that lets you assess, audit, and evaluate the configurations of your AWS resources
 
-### 32. Amazon Simple Notification Service (Amazon SNS)
+### 34. Amazon Simple Notification Service (Amazon SNS)
 An AWS tool that lets you send texts, emails, and messages to other cloud services and send notifications in various forms from the cloud to the client
 
-### 33. AWS artifact
+### 35. AWS artifact
 A central resource for compliance-related information. It provides on-demand access to AWS security and compliance reports and select online agreements.
 
-### 34. Relational database
+### 36. Relational database
 A collection of datasets organized as records and columns in tables. In a relational database system, relationships are defined between the database tables. Think of a relational database as a set of data with 1-to-1 and 1-to-many relationships. For example, a database of customers would match each customer with an identifier that uniquely identifies the customer. Developers use structured query language (SQL) to interact with the database.
 
-### 35. Amazon Relational Database Service (Amazon RDS)
+### 37. Amazon Relational Database Service (Amazon RDS)
 Amazon RDS lets developers create and manage relational databases in the cloud. Amazon RDS lets developers track large amounts of data and organize and search through it efficiently.
 
-### 36. Amazon DynamoDB
+### 38. Amazon DynamoDB
 The AWS nonrelational database service. Data is stored in key-value pairs.
 
-### 37. Nonrelational database
+### 39. Nonrelational database
 Also called a "NoSQL" or "Not only SQL" database. Each entry is stored in a key-value pair in which each key is attached to values. Each entry can have a different number of values attached to a key.
 
-### 38. Amazon Redshift
+### 40. Amazon Redshift
 The AWS data-warehousing service that can store massive amounts of data in a way that makes it fast to query for business intelligence (BI) purposes.
 
-### 39. Online transaction processing (OLTP)
+### 41. Online transaction processing (OLTP)
 A category of data processing that is focused on transaction-oriented tasks. OLTP typically involves inserting, updating, or deleting small amounts of data in a database.
 
-### 40. Online analytic processing (OLAP)
+### 42. Online analytic processing (OLAP)
 A computing method that lets users efficiently and selectively extract and query data to analyze it from different points of view.
 
-### 41. Amazon Aurora
+### 43. Amazon Aurora
 A relational database engine compatible with MySQL and PostgreSQL, built for the cloud, combining the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open-source databases.
 
-### 42. MySQL
+### 44. MySQL
 An open-source relational database management system.
 
-### 43. Amazon ElastiCache
+### 45. Amazon ElastiCache
 A web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by letting you retrieve information from fast, managed, in-memory caches, instead of relying on slower disk-based databases.
 
-### 44. Cache
+### 46. Cache
 In computing, a cache is a high-speed data storage layer that stores a subset of data, typically transient in nature, so that future requests for that data are served up faster than is possible by accessing the data’s primary storage location.
 
-### 45. Data caching
+### 47. Data caching
 Storing data in a cache lets you efficiently reuse previously retrieved or computed data. The data in a cache is generally stored in fast-access hardware such as random access memory (RAM) and can also be used with a software component.
 
-### 46. Elastic Load Balancing
+### 48. Elastic Load Balancing
 Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, containers, IP addresses, and AWS Lambda functions. If traffic to a website suddenly spikes, that traffic can be routed to other EC2 instances (or other types of instances such as Lambda instances) that have been established in advance for this purpose. This load balancing avoids a single server being overloaded because of increased traffic routed to it.
 
-### 47. Random access memory (RAM)
+### 49. Random access memory (RAM)
 Volatile, temporary memory storage. This is the data that is held temporarily while a machine is in use; however, once the machine is powered off or the task is completed, this data goes away. Virtual memory is stored in the read-only memory (ROM) as a supplement to RAM when there is not enough temporary memory available.
+
+### 50. AWS Elastic Beanstalk
+Elastic Beanstalk automatically handles the deployment details of capacity provisioning, load balancing, automatic scaling, and application health monitoring of an application. In many ways, using Elastic Beanstalk is like running a macro or a batch file that places a wrapper around an existing application so that it runs smoothly in the Amazon Web Services (AWS) Cloud.
+
+### 51. AWS CloudFormation
+This service gives developers and businesses an easy way to create a collection of related AWS resources and provision them in an orderly and predictable fashion. CloudFormation provides a means for combining a stack of AWS services, similar to writing macros or batch files in Linux or Microsoft Windows.
+
+### 52. Stack
+A collection of AWS resources that you can manage as a single unit. You can create, update, or delete a collection of resources by creating, updating, or deleting stacks.
