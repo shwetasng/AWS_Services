@@ -96,48 +96,47 @@ A service that lets you assess, audit, and evaluate the configurations of your A
 ### 32. Amazon Simple Notification Service (Amazon SNS)
 An AWS tool that lets you send texts, emails, and messages to other cloud services and send notifications in various forms from the cloud to the client
 
-
-### 29. AWS artifact
+### 33. AWS artifact
 A central resource for compliance-related information. It provides on-demand access to AWS security and compliance reports and select online agreements.
 
-### 30. Relational database
+### 34. Relational database
 A collection of datasets organized as records and columns in tables. In a relational database system, relationships are defined between the database tables. Think of a relational database as a set of data with 1-to-1 and 1-to-many relationships. For example, a database of customers would match each customer with an identifier that uniquely identifies the customer. Developers use structured query language (SQL) to interact with the database.
 
-### 31. Amazon Relational Database Service (Amazon RDS)
+### 35. Amazon Relational Database Service (Amazon RDS)
 Amazon RDS lets developers create and manage relational databases in the cloud. Amazon RDS lets developers track large amounts of data and organize and search through it efficiently.
 
-### 32. Amazon DynamoDB
+### 36. Amazon DynamoDB
 The AWS nonrelational database service. Data is stored in key-value pairs.
 
-### 33. Nonrelational database
+### 37. Nonrelational database
 Also called a "NoSQL" or "Not only SQL" database. Each entry is stored in a key-value pair in which each key is attached to values. Each entry can have a different number of values attached to a key.
 
-### 34. Amazon Redshift
+### 38. Amazon Redshift
 The AWS data-warehousing service that can store massive amounts of data in a way that makes it fast to query for business intelligence (BI) purposes.
 
-### 35. Online transaction processing (OLTP)
+### 39. Online transaction processing (OLTP)
 A category of data processing that is focused on transaction-oriented tasks. OLTP typically involves inserting, updating, or deleting small amounts of data in a database.
 
-### 36. Online analytic processing (OLAP)
+### 40. Online analytic processing (OLAP)
 A computing method that lets users efficiently and selectively extract and query data to analyze it from different points of view.
 
-### 37. Amazon Aurora
+### 41. Amazon Aurora
 A relational database engine compatible with MySQL and PostgreSQL, built for the cloud, combining the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open-source databases.
 
-### 38. MySQL
+### 42. MySQL
 An open-source relational database management system.
 
-### 39. Amazon ElastiCache
+### 43. Amazon ElastiCache
 A web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by letting you retrieve information from fast, managed, in-memory caches, instead of relying on slower disk-based databases.
 
-### 40. Cache
+### 44. Cache
 In computing, a cache is a high-speed data storage layer that stores a subset of data, typically transient in nature, so that future requests for that data are served up faster than is possible by accessing the data’s primary storage location.
 
-### 41. Data caching
+### 45. Data caching
 Storing data in a cache lets you efficiently reuse previously retrieved or computed data. The data in a cache is generally stored in fast-access hardware such as random access memory (RAM) and can also be used with a software component.
 
-### 42. Elastic Load Balancing
+### 46. Elastic Load Balancing
 Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, containers, IP addresses, and AWS Lambda functions. If traffic to a website suddenly spikes, that traffic can be routed to other EC2 instances (or other types of instances such as Lambda instances) that have been established in advance for this purpose. This load balancing avoids a single server being overloaded because of increased traffic routed to it.
 
-### 43. Random access memory (RAM)
+### 47. Random access memory (RAM)
 Volatile, temporary memory storage. This is the data that is held temporarily while a machine is in use; however, once the machine is powered off or the task is completed, this data goes away. Virtual memory is stored in the read-only memory (ROM) as a supplement to RAM when there is not enough temporary memory available.
