@@ -126,3 +126,18 @@ A relational database engine compatible with MySQL and PostgreSQL, built for the
 
 ### 38. MySQL
 An open-source relational database management system.
+
+### 39. Amazon ElastiCache
+A web service that makes it easy to deploy, operate, and scale an in-memory cache in the cloud. The service improves the performance of web applications by letting you retrieve information from fast, managed, in-memory caches, instead of relying on slower disk-based databases.
+
+### 40. Cache
+In computing, a cache is a high-speed data storage layer that stores a subset of data, typically transient in nature, so that future requests for that data are served up faster than is possible by accessing the data’s primary storage location.
+
+### 41. Data caching
+Storing data in a cache lets you efficiently reuse previously retrieved or computed data. The data in a cache is generally stored in fast-access hardware such as random access memory (RAM) and can also be used with a software component.
+
+### 42. Elastic Load Balancing
+Elastic Load Balancing automatically distributes incoming application traffic across multiple targets, such as Amazon Elastic Compute Cloud (Amazon EC2) instances, containers, IP addresses, and AWS Lambda functions. If traffic to a website suddenly spikes, that traffic can be routed to other EC2 instances (or other types of instances such as Lambda instances) that have been established in advance for this purpose. This load balancing avoids a single server being overloaded because of increased traffic routed to it.
+
+### 43. Random access memory (RAM)
+Volatile, temporary memory storage. This is the data that is held temporarily while a machine is in use; however, once the machine is powered off or the task is completed, this data goes away. Virtual memory is stored in the read-only memory (ROM) as a supplement to RAM when there is not enough temporary memory available.
