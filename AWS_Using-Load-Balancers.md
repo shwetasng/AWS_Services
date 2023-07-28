@@ -40,7 +40,9 @@
         - Configures the web server to automatically start on boot
         - Starts the web server
         - Creates a simple webpage 
-11. Choose **Launch instance** .
+11. Choose **Launch instance** . 
+<img width="847" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/2c46d4ab-ad31-47c0-98de-b3f899952095">
+
 12. On the next screen, Choose **View all instances**.
 13. Before you continue, wait for your instance to display the following:
     - **Instance state**:  Running
@@ -51,12 +53,15 @@
 14. Select the **Web Server 1** instance that you created earlier in this lab.
 15. In the **Details** tab copy the **Public IPv4 address** of your instance, then open a new tab in your web browser and paste in and load the address.
     - It should display the web server page with the message *Hello World! This is server 1.**
+     <img width="393" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/cb2226c5-df28-4655-81f0-1395e37749b2">
+
     - **Note**: If web page is not displayed, ensure that you are accessing page using http:// (not https://).
 ### Task 3. Create a second EC2 instance for load balancing
 - In this task, you will create a second EC2 instance so that you will later be able to configure load balancing between the two instances.
 16. Return to the **EC2 Management Console** browser tab.
 17. Select the **Web Server 1** instance.
-18. From the **Actions** menu, choose Images and templates****, then choose **Launch more like this**
+18. From the **Actions** menu, choose Images and templates****, then choose **Launch more like this** <img width="764" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/b6d61606-1507-4265-a132-43b15d515f28">
+
     - A **Launch an instance** page opens.
 19. In the **Name and tags** pane, change the Name to `Web Server 2`.
 20. In the **Key pair (login)** section, from the **Key pair name** - ***required*** dropdown list, choose **vockey**.
@@ -73,7 +78,8 @@
     ```
     - **Note**: This script is almost the same as the one that you used for the first instance. However, notice that it says *This is server 2*. The text that displays when you access Web Server 2 will be different than the text of Web Server 1. When you access the instances through the load balancer, this difference in text is how you will know which instance is displayed.
 24. Choose **Launch instance** .
-25. On the next screen, Choose **View all instances**.
+25. On the next screen, Choose **View all instances**. <img width="766" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/de278cfa-bf49-442d-bda1-0aada8ce7a07">
+
 26. Before you continue, wait for your instance to display the following:
     - **Instance state**:  Running
     - **Status check**:  2/2 checks passed
@@ -81,24 +87,34 @@
 ### Task 4. Access the website on the second EC2 instance
 27. Select the **Web Server 2** instance.
 28. In the **Details** tab copy the **Public IPv4 address** of your instance, then open a new tab in your web browser and paste in and load the address.
-29. This will open a new tab in your web browser and display the web server page with the message _Hello World! This is server 2_.
+29. This will open a new tab in your web browser and display the web server page with the message _Hello World! This is server 2_. <img width="401" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/a4a2041f-063b-415a-86dd-9df041e023e2">
+
     - Make a note of the _Availability Zones_ where the **Web Server 1** and **Web Server 2** instances are running. For example, **us-east-1a** and **us-east-1b**. You will need this information in the next task.
 ### Task 5. Create a load balancer
 30. Back in the EC2 console, in the left navigation pane, under **Load Balancing**, choose **Load Balancers**.
 31. Select **Create Load Balancer**.
     - **Tip**: An _Application Load Balancer_ has many features and can be used for HTTP and HTTPS traffic.
-32. Under **Application Load Balancer**, choose **Create**.
+32. Under **Application Load Balancer**, choose **Create**. <img width="716" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/6a9885d8-569d-4db1-b8b9-d08e2377412b">
+
+<img width="736" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/663244c6-181d-4f87-b932-2c6975978c2c">
+
 33. In the _Basic Configuration_ panel:
     - For **Name**, enter `myloadbalancer`.
 34. In the _Network mapping_ panel:
     - Under Mappings, select the **Availability Zones** that you created the two instances in.
     - For example, **us-east-1a** and **us-east-1b**.
+    <img width="607" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/e2a7af1b-4f20-48f6-97f1-7a0981069e19">
+
     - **Note**: The Subnet to use in each selected Availability Zone will be automatically populated.
 35. In the _Security Groups_ panel:
     - Choose **Web Server security group** from the drop down menu.
+    - <img width="674" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f4a4baeb-1cc1-4afa-9ba7-262dfc2fec1f">
+
     - After you close the drop down menu, choose the **X** next to the **default security group** to remove it.
 36. In the _Listeners_ and _routing_ panel:
     - Choose **Create target group**.
+      <img width="788" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/33a4a3f5-77b6-4b18-9ae9-bd0996287d35">
+
     - This will open a new tab in your browser.
 37. In the _Basic Configuration_ panel:
     - Keep the target type set to **Instances**.
@@ -106,15 +122,22 @@
 38. In the _Health checks_ panel:
     - For **Health check path**, enter `index.html` after the forward slash ( / )
     - The path should look like the following: `/index.html`
+    <img width="526" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/fe33857e-cc47-4521-b08f-eaa8e4449945">
+
 39. Choose **Next**.
-40. In the **Register targets** page, in the **Available instances** panel, check the boxes next to the **Web Server 1** and **Web Server 2** instances that you created in this lab.
+40. In the **Register targets** page, in the **Available instances** panel, check the boxes next to the **Web Server 1** and **Web Server 2** instances that you created in this lab. 
+<img width="644" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/142fe046-9ac6-4bad-9434-6561503fd49e">
+
 41. Choose **Include as pending below**.
     - Verify that both instances now appear in the **Targets** list below.
+      <img width="629" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/f1db1964-74b9-4536-b0d3-607eec478c5a">
+
 42. Choose **Create target group**.
     - A banner displays the message that the target group was successfully created.
 43. Return to the **Load Balancers** console tab in the browser.
 44. In the **Listeners and routing** section, under **Listener** choose the **refresh icon** .
-45. From the dropdown, chose the **myalbTG** target group you created.
+45. From the dropdown, chose the **myalbTG** target group you created. <img width="784" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/15638b75-1a0f-4b1a-9ff4-23e793c6605b">
+
 46. Scroll down and chose **Create load balancer**.
     - When the load balancer is created, a _Successfully created load balancer_ message displays.
 47. Choose **View load balancer**.
@@ -129,3 +152,7 @@
     - If your load balancer is working, the _Hello World!_ message displays. Notice whether the message says _This is server 1_ or _This is server 2_.
 51. Refresh the browser tab a few times.
     - Notice when the message changes between _This is server 1_ and _This is server 2_. When the message changes, it means that the load balancer has directed you to the web server on the other EC2 instance that you created in this lab.
+      <img width="524" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/ca4c6e9f-cf37-409c-9bac-1b1ed3310d28">
+      <img width="478" alt="image" src="https://github.com/shwetasng/AWS_Services/assets/103261868/32569c22-e3dc-4691-acaf-8638b0ad5f66">
+
+
